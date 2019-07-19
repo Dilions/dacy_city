@@ -1,2 +1,5 @@
 # dacy_city
-self enjoy
+working project
+plans
+thoughts
+...
