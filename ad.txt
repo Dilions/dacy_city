@@ -1,0 +1,6 @@
+hook    how hook works
+
+cpp interface, not mfc
+	playing gif
+	place part of the picture
+	create a welcome interface by a totally picture not window
