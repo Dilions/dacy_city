@@ -1,4 +1,5 @@
 functors
+stl 仿函数
 
 struct MyPlus{
     int operator()(const int &a , const int &b) const{
@@ -15,5 +16,9 @@ int main()
     return 0;
 }
 
+3/3/3
 原文：https://blog.csdn.net/u010710458/article/details/79734558 
 --------------------- 
+
+
+template
