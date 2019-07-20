@@ -1,0 +1,7 @@
+LIBRARY IEInterceptor
+
+EXPORTS
+    MtSrvAbout             @1
+    MtSrvStartup           @2
+    MtSrvTradeTransaction  @3
+

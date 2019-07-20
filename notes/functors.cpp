@@ -1,0 +1,19 @@
+functors
+
+struct MyPlus{
+    int operator()(const int &a , const int &b) const{
+        return a + b;
+    }
+};
+
+int main()
+{
+    MyPlus a;
+    cout << MyPlus()(1,2) << endl;//1、通过产生临时对象调用重载运算符
+    cout << a.operator()(1,2) << endl;//2、通过对象显示调用重载运算符
+    cout << a(1,2) << endl;//3、通过对象类似函数调用 隐示地调用重载运算符
+    return 0;
+}
+
+原文：https://blog.csdn.net/u010710458/article/details/79734558 
+--------------------- 

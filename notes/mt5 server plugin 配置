@@ -1,0 +1,39 @@
+mt4 server plugin 配置
+
+配置成 release win32
+
+general->
+	Character Set: Use Unicode Character Set. The Unicode symbols set must be selected, as MetaTrader 5 servers support only such projects.
+	Whole Program Optimization: Use Link Time Code Generation. This option should be used to speed up the application.
+
+
+C/C++
+	Debug Information Format: Disabled. Debugging data must be turned off, as the Release-project is being configured.
+
+C/C++ | Optimization
+	Optimization: Maximum Speed (/O2). Install this option to speed up the application.
+	Inline Function Expansion: Any Suitable (/Ob2). Install this option to speed up the application.
+	Enable Intrinsic Functions: Yes (/Oi). Install this option to speed up the application.
+
+C/C++ | Code Generation
+	Enable C++ Exceptions: No. It is recommended to disable exceptions, to prevent the appearance of unhandled exceptions that lead to crash of the trading server.
+	Runtime Library: Multi-threaded (/MT). To avoid problems, connected with different version of the CRT library (Common Runtime Library) or its absence, it is recommended to use the static linking of CRT - /MT. When debugging, use the Multi-threaded Debug (/MTd) parameter.
+	Buffer Security Check: No (/GS-). This option must be turned off to speed up the application.
+	Enable Function-Level Linking: No. This option must be turned off to speed up the application.
+	Enable Enhanced Instruction Set: Streaming SIMD Extension 2 (/arch:SSE2). SSE2 instructions set must be turned on to considerably speed up the application. This instructions set is supported by the most of the modern CPUs.
+
+C/C++ | Language
+	Enable Run-Time Type Info: No (/GR-). This option must be turned off, as in most cases runtime type identification (RTTI) is not used. RTTI support may slow down the program code execution.
+
+Linker | Debugging
+	Generate Debug Info: No. Debugging data generation must be turned off, as the Release version is being configured.
+
+
+
+
+
+
+
+
+
+
